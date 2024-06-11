@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="pointcloud_merger" name="pointcloud_merger" type="pointcloud_merger" output="screen">
+        <remap from="/velodyne_points0" to="/velodyne_points_transformed0"/>
+        <remap from="/velodyne_points1" to="/velodyne_points_transformed1"/>
+        <!-- <remap from="/velodyne_points_transformed" to="/velodyne_points_transformed0"/> -->
+        <!-- <rosparam param="extrinsic_R">[0.9999958, -0.0001989, -0.0029091, 0.0001990,  1.0000000,  0.0000392, 0.0029091, -0.0000398,  0.9999958]</rosparam>
+        <rosparam param="extrinsic_T">[-0.0116737, -0.0474828, 0.0525288]</rosparam> -->
+    </node>
+</launch>
